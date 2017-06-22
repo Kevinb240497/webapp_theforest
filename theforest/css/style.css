@@ -1,0 +1,30 @@
+.poster {
+    width: 100%;
+    height: auto;
+}
+
+#agendalijst{
+    padding: 0 10px 0 10px;
+    list-style-type: none;
+    width: 95%;
+}
+
+.agendaitem {
+    padding: 0 0 0 0;
+    background-color: #F7F387;
+    border: 0;
+    border-bottom: solid 1px #3DD0B3;
+    text-align: left;
+}
+
+#itemdate{
+    background-color: #F7F387;
+    border: 0;
+    width: 35%;
+}
+
+#itemtext{
+    background-color: #F7F387;
+    border: 0;
+    width: 50%;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- jQuery Mobile library -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Eigen Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div data-role="page" data-theme="b">
+    <div data-role="header">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="index.html" data-icon="home">Home</a></li>
+                <li><a href="verzamel.html" data-icon="search">Verzamel</a></li>
+            </ul>
+        </div>
+        <h1>Bestellen</h1>
+    </div>
+
+    <div data-role="content" class="ui-content">
+        <form method="post" action="/action_page_post.php">
+            <label for="fname">Voornaam:</label>
+            <input type="text" name="fname" id="fname" placeholder="vul je voornaam in..." data-clear-btn="true">
+
+            <label for="lname">Achternaam</label>
+            <input type="text" name="lname" id="lname" placeholder="vul je achternaam in..." data-clear-btn="true">
+
+            <label for="adres">Adres + huisnummer</label>
+            <input type="text" name="adres" id="adres" placeholder="vul je adres in..." data-clear-btn="true">
+
+            <label for="pcode">Postcode</label>
+            <input type="text" name="pcode" id="pcode" placeholder="vul je postcode in..." data-clear-btn="true">
+
+            <fieldset class="ui-field-contain">
+                <label for="item">Selecteer Item</label>
+                <select name="item" id="item" multiple data-native-menu="false">
+                    <option value="game">Game</option>
+                    <option value="tshirt">T-Shirt</option>
+                    <option value="hat">Hat</option>
+                    <option value="keychain">Keychain</option>
+                </select>
+            </fieldset>
+            <a href="betaald.html" class="ui-btn">Bestellen</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>
